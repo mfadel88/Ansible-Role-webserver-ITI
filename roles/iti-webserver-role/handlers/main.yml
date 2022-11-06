@@ -1,0 +1,6 @@
+---
+# handlers file for roles/iti-webserver
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted

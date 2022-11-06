@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <title> </title> -->
+  <title> {{ inventory_hostname }} </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <center>
+  <body class="vh-100 dt w-100 bg-dark-pink">
+    <!-- <article > -->
+      
+      <div class="dtc v-mid tc white ph3 ph4-l">
+        <h1 class="f6 f2-m f-subheadline-l fw6 tc">Fadel say Hello World!</h1>
+      </div>
+    
+
+      
+      <h1> Welcome {{ my_name }} From ITI WebServer.</h1>
+      <div>
+          <div>
+              <h3>IP DNS HostName</h3>
+              <p>{{ansible_nodename}}</p>
+          </div>
+          <div>
+              <h3>Private IP</h3>
+              <p>{{ ansible_eth0.ipv4.address }}</p>
+              
+          </div>
+      </div>
+
+    <!-- </article>  -->
+  </body>
+ </center>
+</html>

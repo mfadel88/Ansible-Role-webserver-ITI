@@ -1,0 +1,10 @@
+[webservers]
+Redhat-node2 ansible_host=3.95.250.121 ansible_user=ec2-user
+ubuntu-node1 ansible_host=34.239.245.229 ansible_user=ubuntu
+control-awslinux-node ansible_host=34.234.92.220 ansible_user=ec2-user
+
+[jenkins-agent]
+jenkins-role   ansible_host=34.228.59.4  ansible_user=ec2-user
+
+[dbservers]
+MariaDB-Server  ansible_host=54.237.122.252  ansible_user=ec2-user

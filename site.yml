@@ -1,0 +1,27 @@
+---
+###################################-- WEB SERVER --######################################
+- name: INSTALL WEB SERVER
+  hosts: webservers
+  gather_facts: yes
+  become: yes
+  roles:
+    - iti-webserver-role
+
+
+##################################-- Jenkins Agent--######################################
+#- name: INSTALL jenkins-agent
+#  hosts: jenkins-agent
+#  gather_facts: yes
+#  become: yes
+#  roles:
+#    - jenkins-agent
+
+##################################-- MARIA DB --######################################
+#- name: INSTALL Maria-DB-Server-on-RHEL
+#  hosts: dbservers
+#  vars_files:
+#  - roles/mariadb-server/vars/secrets.yml
+#  gather_facts: yes
+#  become: yes
+#  roles:
+#    - mariadb-server
